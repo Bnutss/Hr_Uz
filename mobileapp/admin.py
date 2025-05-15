@@ -6,6 +6,7 @@ from .models import JobApplication
 @admin.register(JobApplication)
 class JobApplicationAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'full_name',
         'date_of_birth',
         'marital_status',
