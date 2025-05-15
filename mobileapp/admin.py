@@ -51,7 +51,7 @@ class JobApplicationAdmin(admin.ModelAdmin):
     def photo_tag(self, obj):
         if obj.photo:
             return format_html(
-                '<img src="{}" width="100" height="100" style="object-fit: cover; border-radius: 8px;" />',
+                '<img src="{}" width="100" height="100" style="object-fit: cover; border-radius: 8px; transform: rotate(270deg);" />',
                 obj.photo.url
             )
         return "-"
